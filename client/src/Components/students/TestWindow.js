@@ -37,6 +37,7 @@ const onselect=(questionid,choice)=>{
         Enter fullscreen
       </button>
         <FullScreen handle={handle}>
+        <div style={{background: "white"}}>
         <Row>
             <Col md={2} className="border-right mx-auto">
             <ButtonGroup vertical>
@@ -54,6 +55,7 @@ const onselect=(questionid,choice)=>{
                 
             </Col>
         </Row>
+        </div>
         </FullScreen>
         </>
     )
