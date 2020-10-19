@@ -10,11 +10,11 @@ import About from "./Components/About";
 import Contact from "./Components/Contact"
 import Student from "./Components/MainScreen/Student";
 import Faculty from "./Components/MainScreen/Faculty";
-
-
+import TestWindow from "./Components/students/TestWindow"
 function App() {
   return (
     <>
+
      <Header/>
         <main className="py-3">
 <Container fluid>
@@ -26,14 +26,14 @@ function App() {
   <Route component={Contact} path="/contact" exact/>
   <Route component={Student} path="/students" exact/>
   <Route component={Faculty} path="/faculties" exact/>
-  
+  <Route component={TestWindow} path="/teststuents"/>
   </Switch>
 </Container>
         </main>
 
         <Footer/>
     </>
-  );
+      );
 }
 
 export default App;

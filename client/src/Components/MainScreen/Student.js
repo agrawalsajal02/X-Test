@@ -1,5 +1,7 @@
 import React from 'react'
 import { Container,Form,Button ,Row,Col} from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
+import { Link } from 'react-router-dom'
 import colleges from "./Form/colleges"
 const Student = () => {
     return (
@@ -41,9 +43,8 @@ const Student = () => {
     <Form.Check type="checkbox" label="Above all Info Are Correct"  required/>
   </Form.Group>
 
-  <Button variant="primary" type="submit">
-    Submit
-  </Button>
+
+  <Link to="/teststuents/1" className="btn btn-primary">Sign up</Link>
 </Form>
         </Container>
     )
